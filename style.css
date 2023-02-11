@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  width: auto;
+  height: 1080px;
+}
 .navbar {
   position: fixed;
   display: flex;
@@ -12,10 +17,21 @@
   top: 0px;
 }
 
+.icons {
+  position: sticky;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  margin-top: 35vh;
+  float: right;
+  align-self: flex-start;
+}
+
 .logo {
   position: inherit;
   left: 2%;
-  top: 1.4%;
+  top: 2.4%;
   /*border: 2px dashed black;*/
 }
 
@@ -131,16 +147,6 @@ a:active {
   color: #6f7373;
 }
 
-.icons {
-  position: sticky;
-  top: 70px;
-  display: flex;
-  flex-direction: column;
-  width: 75px;
-  margin-top: 35vh;
-  float: right;
-}
-
 .buttons {
   position: relative;
   display: flex;
@@ -222,6 +228,8 @@ a:active {
 }
 
 .information {
+  display: flex;
+  justify-content: space-evenly;
   position: relative;
   top: 693px;
   border: 1px dashed pink;
@@ -230,4 +238,86 @@ a:active {
   height: 380px;
   background: #483eff;
   border-radius: 21px;
+}
+
+.leftcontainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 20%;
+  padding: 45px;
+  left: 45px;
+  min-height: 283px;
+}
+
+.leftcontainer button:first-of-type {
+  padding: 20px;
+  background: #bce0f6;
+  box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.39);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: large;
+}
+
+.leftcontainer button:not(:first-child) {
+  font-family: "DM Sans";
+  font-style: normal;
+  color: #fff;
+  background: #483eff;
+  border: 5px solid #ffffff;
+  border-radius: 21px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: large;
+}
+
+.yourinfo {
+  font-family: "DM Sans";
+  font-style: normal;
+  background: #ffffff;
+  border-radius: 19px;
+  width: 55%;
+  left: 15%;
+  position: inherit;
+  height: 68%;
+  top: 19px;
+  padding: 40px;
+}
+
+.yourinfo h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #04285a;
+}
+
+.yourinfo p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  color: #04285a;
+}
+
+.yourinfo p span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.next {
+  position: absolute;
+  top: 269px;
+  right: 184px;
+  width: 122px;
+  height: 47px;
+  background: #000000;
+  border-radius: 9px;
+  color: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 322;
+  font-size: 24px;
 }
